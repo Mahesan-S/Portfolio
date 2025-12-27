@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape the Traps</title>
+    <link rel="stylesheet" href="EscapeTheTraps.css" />
+    <script src="EscapeTheTraps.js" defer></script>
+  </head>
+  <body>
+    <div class="DataContainer">
+      <!-- ------------------------------------- video play tag -->
+      <div class="VideoContainer show">
+        <video loop autoplay muted>
+          <source src="../../gameViedClips/2D game.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- ---------------------------------- about the game -->
+      <div class="ProjectDetails ">
+        <div class="ProjectAbout">
+          <h1>About</h1>
+          <p class="Para">
+            “Escape The Traps” is my first 2D game and marks the beginning of my
+            journey into game development. In this project, I experimented with
+            fundamental game design concepts, including data structures,
+            animation effects, and tile-based background systems. Developing
+            this game helped me understand the core mechanics of 2D gameplay,
+            such as player control, enemy interactions, and level design. It was
+            a great learning experience that strengthened my foundation in
+            programming and creative game development.
+          </p>
+        </div>
+        <!-- ---------------------------------- timeline  -->
+        <div class="ProjectTimeline show">
+          <h1>project details</h1>
+          <ul class="ProjectTimelineList">
+            <li>
+              <p><img src="../Image/Group.png" alt="" /> Team Size : 1</p>
+            </li>
+            <li>
+              <p><img src="../Image/Time.png" alt="" /> TimeLine : 3 Week</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- --------------------------- game detail  -->
+      <div class="ProjectIntro ">
+        <h1 class="heading show">Introduction</h1>
+        <p class="Para">
+          Escape the Traps is a thrilling 2D platformer featuring smooth
+          character animation, dynamic particle effects, and thoughtfully placed
+          traps and checkpoints. Players progress through three increasingly
+          challenging levels; when you die you respawn at the last checkpoint,
+          so every run tests your timing and strategy without feeling unfair.
+          The final level delivers an intense, memorable challenge with clever
+          trap designs and a dramatic progression. Doors and teleporters are
+          integrated into the world — some doors open automatically while others
+          require the player to press a button to move objects or activate
+          mechanisms. With responsive controls, clear visual feedback from
+          particles and animations, and carefully balanced checkpoints, Escape
+          the Traps offers a satisfying mix of precision platforming and
+          puzzle-like interactions.
+        </p>
+      </div>
+      <!-- -------------------------------- Expain the Aniamtion -->
+      <div class="mechanisms ">
+        <h1 class="heading show">Animation</h1>
+        <h1></h1>
+        <p class="Para">
+          In my 2D game Escape the Traps, I created a complete Animator
+          Controller using Unity’s animation state machine system. The player’s
+          animations — such as idle, walk, jump, and death — are managed through
+          different animation states connected by transitions. These states are
+          controlled through code, where specific key inputs trigger animation
+          changes. For example, pressing movement keys activates the walk
+          animation, jumping triggers the jump state, and when the player hits a
+          trap, the death animation plays automatically. This setup ensures
+          smooth and responsive character movement while keeping the gameplay
+          immersive and visually dynamic.
+        </p>
+        <div class="ImageDiv">
+          <img src="EscapeTheTrap Image/Animation.png" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- ------------------------------------- full machaninum -->
+      <div class="mechanisms ">
+        <h1 class="heading show">Full map</h1>
+        <h1></h1>
+        <div class="ImageDiv">
+          <img
+            src="EscapeTheTrap Image/Full soure image.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <p class="Para">
+          In my 2D game Escape the Traps, I designed the full map layout to
+          provide a clear and engaging gameplay flow. I used a Cinemachine
+          camera to create smooth and dynamic camera movements that follow the
+          player naturally throughout the level. To enhance the experience, I
+          implemented an Audio Source component for sound effects, adding impact
+          to actions like jumping, triggering traps, and reaching checkpoints.
+          Additionally, I used the Canvas system in Unity to display UI elements
+          such as markers and indicators, helping players navigate and
+          understand objectives within the game world. This combination of
+          visuals, audio, and smooth camera control makes the gameplay feel more
+          polished and immersive.
+        </p>
+      </div>
+      <!-- ---------------------------------- Download the game -->
+      <div class="DownloadGame show">
+        <a href="Escape the traps.rar" download=""> Download</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+  --green: #dcffb7;
+  --gray: #3d3b40;
+  --sideSpace: 20px;
+  --DetailBackGround: rgba(101, 94, 94, 0.3);
+}
+
+body {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--green);
+}
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px green;
+}
+.DataContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 500px));
+  gap: 10px;
+}
+/* ----------------------------- Heading */
+.heading {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading h1 {
+  text-decoration: underline;
+  /* border: solid 2px blue; */
+}
+.heading p {
+  text-align: center;
+  /* border: solid 2px blue; */
+}
+/* -------------------------------- Show case */
+.modeimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+}
+.modeimg img {
+  object-fit: contain;
+  /* margin: 0 auto; */
+}
+
+.hiddenleft,
+.hiddenRight {
+  border: solid 2px white;
+}
+/*  java script sessions ---------------------------------------- */
+.hiddenleft {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.hiddenRight {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

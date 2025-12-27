@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie Shooter</title>
+    <link rel="stylesheet" href="ZombieShooter.css" />
+    <script src="ZombieShooter.js" defer></script>
+  </head>
+  <body>
+    <div class="DataContainer">
+      <!-- ------------------------------------- video play tag -->
+      <div class="VideoContainer show">
+        <video loop autoplay muted>
+          <source
+            src="../../gameViedClips/Zombie shooter.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- ---------------------------------- about the game -->
+      <div class="ProjectDetails">
+        <div class="ProjectAbout">
+          <h1>About</h1>
+          <p class="Para">
+            “Zombie Shooter” is my second 3D game and builds on the systems I
+            developed in Bug Shooter. It features improved AI, particle effects,
+            and animation states, along with new additions like audio effects,
+            timeline-based cutscenes, and Unity’s animation rigging system for
+            realistic character motion. This project helped me enhance my
+            technical skills and learn how to blend gameplay with cinematic
+            storytelling.
+          </p>
+        </div>
+        <!-- ---------------------------------- timeline  -->
+        <div class="ProjectTimeline show">
+          <h1>project details</h1>
+          <ul class="ProjectTimelineList">
+            <li>
+              <p><img src="../Image/Group.png" alt="" /> Team Size : 1</p>
+            </li>
+            <li>
+              <p><img src="../Image/Time.png" alt="" /> TimeLine : 6 Week</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- --------------------------- game detail  -->
+      <div class="ProjectIntro">
+        <h1 class="heading show">Introduction</h1>
+        <p class="Para">
+          In this project, I focused on leveraging my knowledge of Unity’s
+          Animation Rigging System to create realistic and dynamic character
+          movements. I applied advanced rigging techniques, including Multi-Aim
+          and IK constraints, to ensure precise weapon handling and natural
+          whole-body motion. The project allowed me to experiment with layered
+          animations, smooth blending between locomotion and combat actions, and
+          runtime IK adjustments for hands and weapons. Working on Zombie
+          Shooter gave me valuable experience in building complex rigs,
+          fine-tuning character motion, and integrating animation systems
+          seamlessly with gameplay, significantly enhancing both visual polish
+          and player immersion.
+        </p>
+      </div>
+      <!-- -------------------------------- Expain the Aniamtion -->
+      <div class="mechanisms">
+        <h1 class="heading show">Animation</h1>
+        <h1></h1>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/PlayerAnimator.png" alt="" srcset="" />
+        </div>
+        <p class="Para">
+          This is the animation state machine I created in Unity to control my
+          character’s actions and transitions. It manages different animation
+          states such as idle, walking, picking up items, pulling levers, and
+          dying. Each state is connected through conditional transitions
+          controlled by parameters like States, PickUp, RunPick, FireState, Aim,
+          and Pull. These parameters are triggered through gameplay inputs and
+          events, allowing smooth transitions and realistic motion between
+          actions. For example, when the player moves, the character shifts from
+          idle to running; when interacting with objects, it transitions to a
+          pickup or lever-pulling animation. This system provides a clear,
+          modular structure that makes it easy to expand and refine animations
+          while keeping movement natural and responsive within the game.
+        </p>
+      </div>
+      <!-- -------------------------------- Aniamtion layer -->
+      <div class="mechanisms">
+        <h1 class="heading show">Animation Layer</h1>
+        <h1></h1>
+        <p class="Para">
+          I implemented a two-layer animation system to handle different aspects
+          of character movement and combat. The first layer manages locomotion,
+          blending walk and run animations smoothly based on player input to
+          ensure natural movement transitions. The second layer is dedicated to
+          combat actions, including aiming, shooting, firing, and reloading. By
+          separating these layers, the character can perform upper-body actions
+          like aiming or firing a weapon independently of lower-body movement,
+          allowing the player to run, strafe, or walk while simultaneously
+          performing combat animations. The system also uses weight blending and
+          layer masking to ensure smooth transitions between idle, movement, and
+          action states, resulting in responsive and visually coherent gameplay.
+        </p>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/PlayerLayer.png" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- ------------------------------------- rig player -->
+      <div class="mechanisms">
+        <h1 class="heading show">Player Rig</h1>
+        <h1></h1>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/PlayerRig.png" alt="" srcset="" />
+        </div>
+        <p class="Para">
+          I implemented a full rigging system in Unity using the Animation
+          Rigging package to create realistic, goal-oriented character motion.
+          Multi-Aim and chained constraints drive the shoulders, hips, and head
+          to produce natural, whole-body aiming, while secondary adjustments
+          like shoulder offsets, aim smoothing, and rotation limits prevent
+          unnatural poses. Additive rotation constraints with damped
+          interpolation make spins and sweeping motions feel powerful yet
+          readable. The rig supports multiple weapons with configurable target
+          sockets and per-weapon offsets, integrates with the Animator
+          Controller and gameplay events, and includes runtime visualization
+          tools for fine-tuning. Performance is optimized by limiting
+          constraints and using lerped weights.
+        </p>
+      </div>
+      <!-- ------------------------------------- Ik script player -->
+      <div class="mechanisms">
+        <h1 class="heading show">IK Rig Script</h1>
+        <h1></h1>
+        <p class="Para">
+          To handle hand and weapon alignment, I created an IK animation script
+          that activates at runtime when a weapon is equipped. The script snaps
+          hands to the weapon’s grip sockets smoothly, blending with
+          animator-driven motion for firing, reloading, and movement animations.
+          Input events toggle rig layers and IK weights, enabling smooth
+          transitions between armed and unarmed states. Overall, this system
+          ensures believable aiming, reliable hand placement, and natural,
+          polished character motion while maintaining performance.
+        </p>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/IK_Script.png" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- ------------------------------------- Cut Scene -->
+      <div class="mechanisms">
+        <h1 class="heading show">Cut Scene</h1>
+        <h1></h1>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/Timeline.png" alt="" srcset="" />
+        </div>
+        <p class="Para">
+          I created a cutscene in which zombies enter the scene dynamically when
+          a gate opens. The cutscene coordinates animations, camera angles, and
+          timing so that the gate opening triggers a dramatic reveal of the
+          zombies, building tension and anticipation for the player. During this
+          sequence, the zombies move along predefined paths or spawn at specific
+          points to create a cinematic and immersive experience. The system
+          ensures smooth transitions between the cutscene and gameplay, allowing
+          the player to seamlessly take control once the zombies are fully
+          engaged, while also supporting adjustments for timing, wave size, and
+          entry points to enhance suspense and replayability.
+        </p>
+      </div>
+      <!-- ---------------------------------- Download the game -->
+      <div class="DownloadGame show">
+        <a href="Zombie Shooter.rar" download> Download</a>
+      </div>
+    </div>
+  </body>
+</html>

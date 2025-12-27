@@ -1,0 +1,35 @@
+:root {
+--green: #dcffb7;
+  --Alter: #9EFFA3;
+  --TextColor: #B0B0B0;;
+  --gray: #3d3b40;
+  --hoverLoading: purple;
+  --sideSpace: 20px;
+  --DetailBackGround: rgba(101, 94, 94, 0.3);;
+}
+
+body {
+   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Courier New", Courier, monospace;
+  color: var(--Alter);
+  font-size: 20px;
+}
+.DataContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2,1fr); */
+  gap: 20px;
+}
+
+.Project{
+    /* border: solid 2px rgb(68, 0, 255); */
+    margin: 10px;
+    background-color: var(--DetailBackGround);
+    box-shadow: 5px 3px 5px 1px var(--green);
+    padding-left: var(--sideSpace);
+   
+}
+.Project h1{
+    text-align: left;
+    /* padding-left: var(--sideSpace); */
+}

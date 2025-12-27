@@ -1,0 +1,95 @@
+:root {
+  --green: #9EFFA3;
+  --gray: #3d3b40;
+  --sideSpace: 20px;
+  --DetailBackGround: rgba(101, 94, 94, 0.3);
+}
+
+body {
+   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Courier New", Courier, monospace;
+  color: var(--green);
+}
+.DataContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+/* -------------------------------------- intro headind */
+.GameDevelopmentInto {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+}
+.GameDevelopmentInto h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.GameDevelopmentInto p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+/* ------------------------- project ShowCase */
+.projectShowCase {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.projectShowCase button {
+  /* padding: 20px; */
+   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #dcffb7;
+  filter: grayscale(70%);
+  border: #2c5364;
+  border-color:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+
+  /* border: solid 2px green; */
+}
+.projectShowCase button:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
+.projectShowCase button video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.ProjectDescription {
+  background-color: var(--DetailBackGround);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 20px;
+}
+.ProjectDescription p {
+  font-size: 20px;
+  text-align: start;
+}
+/* .hidden {
+  border: solid 2px white;
+} */
+/*  java script sessions ---------------------------------------- */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

@@ -1,7 +1,7 @@
 :root {
   --green: #dcffb7;
-  --Alter: #9EFFA3;
-  --TextColor: #B0B0B0;;
+  --Alter: #9effa3;
+  --TextColor: #b0b0b0;
   --gray: #3d3b40;
   --hoverLoading: purple;
   --sideSpace: 20px;
@@ -63,8 +63,8 @@ body {
   /* border: solid 2px green; */
 }
 .profilePhoto img {
-  max-width: 20vh;
-  height: auto;
+  max-width: 30vh;
+  height: 30vh;
   border-radius: 50%;
   border: solid 2px var(--green);
 }
@@ -146,15 +146,11 @@ body {
 .SkillDetail {
   grid-column-start: 1;
   grid-column-end: 4;
-
-  
 }
 .SkillDetailList li {
   list-style: none;
   display: inline-block;
   margin-left: 80px;
-
-
 }
 .SkillDetail img {
   border: solid 2px var(--green);
@@ -252,26 +248,34 @@ body {
   transform: translateX(0);
 }
 
-@media (max-width: 768px) {
-  p{
+@media (max-width: 800px) {
+  p {
     font-size: 10px;
     line-height: 10px;
   }
-.AboutMe{
+  .AboutMe {
     font-size: 10px;
     line-height: 10px;
   }
-.Exprencies{
-  padding: 10px;
-  font-size: 5px;
-}
- h1 {
+  .Exprencies {
+    padding: 10px;
+    font-size: 5px;
+  }
+  h1 {
     font-size: 15px;
   }
-  .SelectTheproject a{
+  .SelectTheproject a {
     font-size: 10px;
   }
-  .profilePhoto img{
-    min-width: 10vh;
+  .profilePhoto img {
+    width: 10vh;
+    height: 10vh;
+  }
+  .EducationDetail h1 {
+    font-size: 15px;
+  }
+  .SkillDetailList img {
+    min-width: 5vh;
+    height: auto;
   }
 }

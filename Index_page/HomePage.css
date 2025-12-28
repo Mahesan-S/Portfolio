@@ -14,6 +14,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: var(--Alter);
 }
+
 /*  heading and about parts sessions ---------------------------------------- */
 .DataContainer {
   display: grid;
@@ -62,8 +63,8 @@ body {
   /* border: solid 2px green; */
 }
 .profilePhoto img {
-  width: 40vh;
-  height: 40vh;
+  max-width: 20vh;
+  height: auto;
   border-radius: 50%;
   border: solid 2px var(--green);
 }
@@ -249,4 +250,28 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  p{
+    font-size: 10px;
+    line-height: 10px;
+  }
+.AboutMe{
+    font-size: 10px;
+    line-height: 10px;
+  }
+.Exprencies{
+  padding: 10px;
+  font-size: 5px;
+}
+ h1 {
+    font-size: 15px;
+  }
+  .SelectTheproject a{
+    font-size: 10px;
+  }
+  .profilePhoto img{
+    min-width: 10vh;
+  }
 }

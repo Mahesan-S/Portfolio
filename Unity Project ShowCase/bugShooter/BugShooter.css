@@ -193,3 +193,16 @@ body {
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
+@media (max-width: 800px) {
+  p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .ImageDiv img{
+    min-height: 10vh;
+    min-height: 10vh;
+  }
+}

@@ -265,7 +265,9 @@ body {
     font-size: 15px;
   }
   .SelectTheproject a {
-    font-size: 10px;
+    font-size: 5px;
+     border-radius: 10px;
+     padding: 10px;
   }
   .profilePhoto img {
     width: 10vh;
@@ -275,7 +277,7 @@ body {
     font-size: 15px;
   }
   .SkillDetailList img {
-    max-width: 5vh;
-    max-height: 5vh;
+    max-width: 2vh;
+    max-height: 2vh;
   }
 }

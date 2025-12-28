@@ -30,7 +30,7 @@ body {
   text-align: left;
   /* padding-left: var(--sideSpace); */
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   /* p {
     font-size: 10px;
     line-height: 10px;
@@ -38,12 +38,12 @@ body {
   h1 {
     font-size: 15px;
   } */
-  .ImageDiv img {
+  /* .ImageDiv img {
     min-height: 10vh;
     min-height: 10vh;
-  }
-  .DataContainer {
+  } */
+  /* .DataContainer {
     display: grid;
     grid-template-columns: auto;
-  }
+  } */
 }

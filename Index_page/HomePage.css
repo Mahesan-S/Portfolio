@@ -275,7 +275,7 @@ body {
     font-size: 15px;
   }
   .SkillDetailList img {
-    min-width: 5vh;
-    height: auto;
+    max-width: 5vh;
+    max-height: 5vh;
   }
 }

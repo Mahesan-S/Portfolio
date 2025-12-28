@@ -1,12 +1,12 @@
 :root {
-  --green: #9EFFA3;
+  --green: #9effa3;
   --gray: #3d3b40;
   --sideSpace: 20px;
   --DetailBackGround: rgba(101, 94, 94, 0.3);
 }
 
 body {
-   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   font-family: "Courier New", Courier, monospace;
   color: var(--green);
 }
@@ -40,11 +40,11 @@ body {
 }
 .projectShowCase button {
   /* padding: 20px; */
-   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #dcffb7;
   filter: grayscale(70%);
   border: #2c5364;
-  border-color:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -92,4 +92,14 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 1vh;
+    line-height: 2.5vh;
+  }
+  .projectShowCase {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

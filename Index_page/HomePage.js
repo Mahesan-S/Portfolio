@@ -15,19 +15,12 @@ HiddenEleemt.forEach((el) => observer.observe(el));
 var aboutMe = document.querySelector(".AboutMe");
 var index = 0;
 var about =
-  `👋 Hi, I’m Mahesan — a passionate Unity Game Developer and 3D Artist 
-who loves turning imagination into interactive experiences.
-
-🎮 As a game developer, I specialize in designing and building engaging 2D and 3D games using Unity and C#, 
-focusing on smooth gameplay mechanics and immersive player experiences.
-
-🎨 As a 3D artist, I enjoy bringing ideas to life through modeling, texturing, and rigging, 
-using tools like Blender and Substance Painter to craft detailed assets and environments.
-
-🚀 I’m always learning new techniques, exploring creative ideas, 
-and pushing my skills further to build projects that blend art, design, and technology seamlessly.`.split(
-    ""
-  );
+  ` Hi, I’m Mahesan, a Unity Game Developer with hands-on experience in building 
+interactive 2D and 3D games using Unity and C#. I focus on creating smooth gameplay mechanics, 
+optimized performance, and engaging player experiences. In my free time, 
+I explore Blender to enhance my 3D modeling skills and create custom assets for my projects. 
+I’m continuously learning new tools and techniques, aiming to blend game design, creativity, 
+and technology to deliver meaningful and immersive experiences.`.split("");
 
 strat();
 
@@ -36,7 +29,7 @@ function strat() {
   for (let i = 0; i < about.length; i++) {
     setTimeout(() => {
       aboutMe.innerHTML += about[i];
-    },i * 10);
+    }, i * 10);
   }
 }
 

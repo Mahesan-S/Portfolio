@@ -105,6 +105,8 @@ body {
 .mechanisms p {
   grid-column: span 1;
   padding-left: var(--sideSpace);
+  display: flex;
+  align-items: center;
 }
 .ImageDiv {
   overflow: hidden;

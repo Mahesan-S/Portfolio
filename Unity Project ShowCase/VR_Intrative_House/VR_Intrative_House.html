@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Interactive House</title>
+    <link rel="stylesheet" href="VR_Intrative_House.css" />
+    <script src="VR_Intrative_House.js" defer></script>
+  </head>
+  <body>
+    <div class="DataContainer">
+      <!-- ------------------------------------- video play tag -->
+      <div class="VideoContainer show">
+        <video loop autoplay muted>
+          <source src="../../gameViedClips/VR.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- ---------------------------------- about the game -->
+      <div class="ProjectDetails">
+        <div class="ProjectAbout">
+          <h1>About</h1>
+          <p class="Para">
+            Developed a VR Interactive House in Unity using OpenXR to create
+            immersive room-based interactions. Configured XR Management with
+            Android and Windows support and implemented interaction using clean,
+            optimized C# code with interfaces and class inheritance. This was my
+            first self-built OpenXR VR project, created independently to explore
+            VR development.
+          </p>
+        </div>
+        <!-- ---------------------------------- timeline  -->
+        <div class="ProjectTimeline show">
+          <h1>project details</h1>
+          <ul class="ProjectTimelineList">
+            <li>
+              <p><img src="../Image/Group.png" alt="" /> Team Size : 1</p>
+            </li>
+            <li>
+              <p><img src="../Image/Time.png" alt="" /> TimeLine : 2 Week</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- --------------------------- game detail  -->
+      <div class="ProjectIntro">
+        <h1 class="heading show">Introduction</h1>
+        <p class="Para">
+          Developed a VR Interactive House experience using Unity with the
+          OpenXR SDK to create immersive room-based interactions. Configured XR
+          Management with Android and Windows platform support to ensure
+          cross-platform VR compatibility. Implemented interactive features
+          using XR Interaction Toolkit and custom C# scripts. Focused on clean
+          and optimized code by applying concepts like interfaces and class
+          inheritance. This project is my first self-developed OpenXR project,
+          built independently to explore VR interaction and system setup.
+        </p>
+      </div>
+      <!-- -------------------------------- Expain the Aniamtion -->
+      <!-- <div class="mechanisms">
+        <h1 class="heading show">Animation</h1>
+        <h1></h1>
+        <div class="ImageDiv">
+          <img src="Zombie Shooter image/PlayerAnimator.png" alt="" srcset="" />
+        </div>
+        <p class="Para">
+          This is the animation state machine I created in Unity to control my
+          character’s actions and transitions. It manages different animation
+          states such as idle, walking, picking up items, pulling levers, and
+          dying. Each state is connected through conditional transitions
+          controlled by parameters like States, PickUp, RunPick, FireState, Aim,
+          and Pull. These parameters are triggered through gameplay inputs and
+          events, allowing smooth transitions and realistic motion between
+          actions. For example, when the player moves, the character shifts from
+          idle to running; when interacting with objects, it transitions to a
+          pickup or lever-pulling animation. This system provides a clear,
+          modular structure that makes it easy to expand and refine animations
+          while keeping movement natural and responsive within the game.
+        </p>
+      </div> -->
+
+      <!-- ---------------------------------- Download the game -->
+      <div class="DownloadGame show">
+        <!-- <a href="Zombie Shooter.rar" download> Download</a> -->
+      </div>
+    </div>
+  </body>
+</html>

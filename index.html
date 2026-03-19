@@ -1,142 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="Index_page/HomePage.css" />
-    <script src="Index_page/HomePage.js" defer></script>
-  </head>
-  <body>
-    <div class="DataContainer">
-      <!-- profile name ------------------------------------------ -->
-      <div class="Profile hidden">
-        <div class="profileName">
-          <h1>Mahesan S</h1>
-          <p>Game development</p>
-        </div>
-        <!-- ------------------------------------------ contatc -->
-        <div class="Contact">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/mahesan-s"
-                ><img src="Index_page/Contact/linkedIn.jpg" alt=""
-              /></a>
-              <!-- <p>linkedIn</p> -->
-            </li>
-            <li>
-              <a href=""><img src="Index_page/Contact/Gmail.jpg" alt="" /></a>
-            </li>
-            <li>
-              <a
-                href="Index_page/resume/Mahesan_S_Unity_Unreal_VR_Developer.pdf"
-                download="Mahesan Resume"
-                ><img src="Index_page/Contact/file.png" alt=""
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- profile Phot0 ------------------------------------------ -->
-      <div class="profilePhoto hidden">
-        <img src="Index_page/Home Page Image/profile.jpg" alt="" />
-      </div>
-      <!------------------------------------------------------------- about me -->
-      <div class="AboutMe hidden">
-        <p>
-           Hi, I’m Mahesan, a Unity Game Developer passionate about creating
-          interactive 2D and 3D experiences using Unity and C#. In my free time,
-          I enjoy exploring Blender to improve my 3D modeling skills. I’m always
-          learning and pushing myself to blend game design, creativity, and
-          technology.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Game Developer</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/> -->
+   <link rel="stylesheet" href="Index_page/HomePage.css" />
+   <!-- <script src="Index_page/HomePage.js" defer></script> -->
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+ <div class="nav-logo">MAHESAN <span style="color: var(--muted); font-size: 1rem;">// GAME DEV</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#expression">Expression</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════
+     01 — HERO / BIO
+════════════════════════════════════ -->
+<section id="hero">
+
+ <div class="hero-text">
+  <p class="hero-tag fade-up">Game Developer | Unity • Unreal Engine 5 • VR • XR Developer</p>
+  <h1 class="hero-name fade-up"><span>Mahesan S</span></h1>
+  <p class="hero-title fade-up">Designing Games. Building Worlds. Living VR.</p>
+  <p class="hero-bio fade-up">
+  Hi, I'm Mahesan — a Game Developer with hands-on experience in Unity and Unreal Engine,
+  specializing in interactive 2D and 3D games and VR/XR experiences built in Unity.
+  I work primarily with C# and C++, focusing on smooth gameplay mechanics, optimized
+  performance, and immersive user interactions. In my free time I explore Blender to
+  sharpen my 3D modeling skills and craft custom assets. Always learning, always building.
+  </p>
+    <div class="hero-btns fade-up">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#expression" class="btn btn-outline">My Expression</a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap fade-up">
+    <div class="deco-line"></div>
+    <div class="photo-card">
+      <!--
+        REPLACE the src below with your own photo path, e.g.:
+        src="your-photo.jpg"
+        or an online URL.
+        Recommended size: ~600×800px portrait.
+      -->
+      <img
+        src="Index_page/Home Page Image/profile.jpg"
+        alt="Your Portrait"
+      />
+      <div class="photo-overlay">Available for hire</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     02 — EDUCATION & SKILLS
+════════════════════════════════════ -->
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="section-header">
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="edu-grid">
+
+    <div class="edu-card">
+      <div class="edu-year">2024</div>
+      <div>
+        <div class="edu-degree">Bachelor of Science — Computer Science</div>
+        <div class="edu-school">Thiagaraja College of Engineering · Madurai, India</div>
+        <p class="edu-desc">
+          What started as curiosity soon became a deep passion for game development. By experimenting
+          with different mechanics, scripting in C#, and building both 2D and 3D projects, I developed
+          a strong understanding of how games are designed and built. Each project taught me something
+          new — from optimizing performance to refining gameplay — and helped me grow as a self-taught
+          Unity developer committed to continuous learning and creativity.
         </p>
       </div>
-      <!-- ----------------------------- eduction heading -->
-      <div class="Education hidden">
-        <h1>Education</h1>
-      </div>
-      <div class="hidden"></div>
-      <div class="hidden"></div>
-      <!-- ----------------------------------------- education detail -->
-      <div class="EducationDetail hidden">
-        <div class="DiplamoDetail">
-          <h1>KLN Polytechinc (2018 - 2021)</h1>
-          <p>
-            💻 “I have a solid foundation in basic computer knowledge, which
-            sparked my passion for coding and technology. During my diploma
-            studies, I learned the fundamentals of computer systems,
-            programming, and software development. This background helped me
-            build logical thinking, problem-solving skills, and a strong
-            understanding of how digital systems work. It became the stepping
-            stone for my journey into game development and creating interactive
-            experiences through code
-          </p>
-        </div>
-        <div class="CollageDetail">
-          <h1>Thiagaraja collage of engineering (2021 - 2024)</h1>
-          <p>
-            🎮 “I learned Unity through my own exploration and hands-on
-            experience. What started as curiosity soon became a deep passion for
-            game development. By experimenting with different mechanics,
-            scripting in C#, and building both 2D and 3D projects, I developed a
-            strong understanding of how games are designed and built. Each
-            project taught me something new — from optimizing performance to
-            refining gameplay — and helped me grow as a self-taught Unity
-            developer committed to continuous learning and creativity.”
-          </p>
-        </div>
-      </div>
-      <!-- ------------------------------------------ Skills heading -->
-      <div class="SkillHeading hidden">
-        <h1>Skills</h1>
-      </div>
-      <div class="hidden"></div>
-      <div class="hidden"></div>
-      <!-- ------------------------------------------ Skill list -->
-      <div class="SkillDetail hidden">
-        <ul class="SkillDetailList">
-          <li><img src="Index_page/logo/CSharp.jpg" alt="" /></li>
-          <li><img src="Index_page/logo/Unity.jpg" alt="" /></li>
-          <li><img src="Index_page/logo/java.jpg" alt="" /></li>
-          <li><img src="Index_page/logo/Blender.jpg" alt="" /></li>
-          <li><img src="Index_page/logo/Unreal_Logo.jpg" alt="" /></li>
-        </ul>
-      </div>
-      <!-- --------------------------- Exprencies -->
-      <div class="Exprencies hidden">
-        <h1>My Exprencies</h1>
-      </div>
-      <div class="hidden"></div>
-      <div class="hidden"></div>
-      <div class="ExprenciesDetatil hidden">
-        <!-- -------------------------------  expreicens 1 -->
-        <div class="ExprenciesData">
-          <h1>Simtech Vr (june 2024 - present)</h1>
-          <p>
-            I’m currently working in the VR division at SimTech VR, where I’ve
-            been learning a lot of new skills and gaining hands-on experience
-            with immersive technologies. My work here has helped me understand
-            how virtual reality systems are developed, optimized, and integrated
-            to create engaging user experiences.
-          </p>
-          <div class="SelectTheproject">
-            <a href="OfficeProject/SimTech/SimTech.html">
-              Explore the Project</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- ---------------------- Modle heading -->
-      <div class="ExloreHeading hidden">
-        <h1>Explore My project</h1>
-      </div>
-      <div class="hidden"></div>
-      <div class="hidden"></div>
-      <!-- ----------------------------------  select the Skill model-->
-      <div class="SelectTheproject hidden">
-        <a href="Unity Project ShowCase/UnityProject.html">Explore</a>
-        <!-- <a href="BlenderDetailsShowCase/BlenderHomePage.html">Extra Activity</a> -->
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-year">2021</div>
+      <div>
+        <div class="edu-degree">Diploma — Computer Science</div>
+        <div class="edu-school">KLN Polytechnic · Madurai, India</div>
+        <p class="edu-desc">
+          I have a solid foundation in basic computer knowledge, which sparked my passion for coding
+          and technology. During my diploma studies, I learned the fundamentals of computer systems,
+          programming, and software development. This background helped me build logical thinking,
+          problem-solving skills, and a strong understanding of how digital systems work. It became
+          the stepping stone for my journey into game development and creating interactive experiences
+          through code.
+        </p>
       </div>
     </div>
-  </body>
+
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-header">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- <p class="skills-title">// Core Skills</p> -->
+  <div class="skill-imgs">
+    <div class="skill-badge">
+      <img src="logo/Unity.png" alt="Unity"/>Unity
+    </div>
+    <div class="skill-badge">
+      <img src="logo/Unreal.png" alt="Unreal"/>Unreal Engine
+    </div>
+    <div class="skill-badge">
+      <img src="logo/Cpp.png" alt="C++"/>C++
+    </div>
+    <div class="skill-badge">
+      <img src="logo/CSharp.png" alt="C#"/>C#
+    </div>
+    <div class="skill-badge">
+      <img src="logo/GitHub.png" alt="Git"/>Git
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════
+     03 — EXPRESSION
+════════════════════════════════════ -->
+<section id="expression">
+  <div class="section-header">
+    <h2 class="section-title">My Expression</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="expr-grid">
+
+    <div class="expr-card">
+      <div class="expr-body">
+        <p class="expr-tag">VR Educational</p>
+        <h3 class="expr-title">VR Educational Applications Developer</h3>
+        <p class="expr-desc">
+            Designed and developed multiple VR-based educational applications for
+          engineering students using the Unity Engine. Implemented over four
+          interactive 3D projects featuring real-time simulations, physics-based
+          interactions, optimized C# scripting, and immersive VR controls to
+          enhance hands-on learning and conceptual understanding.
+        </p>
+      </div>
+    </div>
+
+    <div class="expr-card">
+      <div class="expr-body">
+        <p class="expr-tag">Interactive Museum Experience</p>
+        <h3 class="expr-title">Porunai Museum Interactive Experience</h3>
+        <p class="expr-desc">
+           Developed an interactive museum application for the Porunai Museum in
+          Tirunelveli using Unreal Engine. Implemented gameplay systems using
+          C++ and Blueprints to create engaging user interactions. Integrated
+          Arduino hardware to capture real-world bellows press and release
+          actions, synchronizing them with in-engine character animations. Also
+          implemented drag-and-drop interaction systems to trigger animations
+          and enhance the visitor learning experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="expr-card">
+      <div class="expr-body">
+        <p class="expr-tag">Vaigai AI Chatbot </p>
+        <h3 class="expr-title">Interactive MetaHuman Assistant</h3>
+        <p class="expr-desc">
+           Developed an AI-powered chatbot named Vaigai using Python and Unreal
+          Engine, where Python processes user input and generates contextual
+          responses. The system was integrated with Unreal Engine MetaHuman
+          characters to deliver real-time voice responses with synchronized
+          lip-sync animations. This project was created for the Tamil Nadu State
+          Planning Commission, Chennai, enabling an interactive digital
+          assistant experience through realistic MetaHuman interaction.
+        </p>
+      </div>
+    </div>
+
+     <div class="expr-card">
+      <div class="expr-body">
+        <p class="expr-tag">Government Awareness Platforms </p>
+        <h3 class="expr-title">Unity Interactive Applications</h3>
+        <p class="expr-desc">
+                  Developed optimized Unity-based applications and 2D gameplay systems
+          for government initiatives including Districts of Distinction (DoD),
+          Wings of Youth (WoY), and Wheel of Properties (WoP). These
+          applications were integrated with the Tamil Nadu State Planning
+          Commission, Chennai, creating interactive digital platforms that
+          improved public awareness, learning accessibility, and user engagement
+          through gamified experiences.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     04 — PROJECTS
+════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-header">
+    <!-- <p class="section-num">// 04</p> -->
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-list">
+
+    <!-- ── PROJECT 1 ── -->
+    <div class="project-item">
+      <div class="project-video-wrap">
+        <video autoplay loop muted>
+          <source src="gameViedClips/EscapetheTraps.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="project-info">
+        <div class="project-num">01</div>
+        <h3 class="project-name">Escape The Traps</h3>
+        <div class="project-meta">
+          <span class="meta-chip chip-genre">🎮 Pixel game</span>
+          <span class="meta-chip chip-engine">⚙ Unity</span>
+        </div>
+        <p class="project-desc">
+          "Escape The Traps" is my first 2D game and marks the beginning of my
+          journey into game development. In this project, I experimented with
+          fundamental game design concepts, including data structures,
+          animation effects, and tile-based background systems. Developing
+          this game helped me understand the core mechanics of 2D gameplay,
+          such as player control, enemy interactions, and level design. It was
+          a great learning experience that strengthened my foundation in
+          programming and creative game development.
+        </p>
+        <div class="timeline-bar">
+          <div class="timeline-bar-track">
+            <div class="timeline-bar-fill"></div>
+            <div class="timeline-bar-dot left">
+              <span class="timeline-bar-label">Jan 2023</span>
+            </div>
+            <div class="timeline-bar-dot right">
+              <span class="timeline-bar-label">Feb 2023</span>
+            </div>
+          </div>
+          <div class="timeline-bar-text">Project Duration — 4 Weeks</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROJECT 2 ── -->
+    <div class="project-item">
+      <div class="project-video-wrap">
+        <video autoplay loop muted>
+          <source src="gameViedClips/BugShotter.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="project-info">
+        <div class="project-num">02</div>
+        <h3 class="project-name">Bug shooting</h3>
+        <div class="project-meta">
+          <span class="meta-chip chip-genre">🎮 3D RRB</span>
+          <span class="meta-chip chip-engine">⚙ Unity</span>
+        </div>
+        <p class="project-desc">
+           I implemented player controls, shooting mechanics, and enemy AI
+          behavior to create an engaging and interactive 3D environment. Along
+          the way, I experimented with particle effects, lighting, materials,
+          and camera movement to enhance the overall visual quality and feel of
+          the game. I also learned how to design realistic terrains, sculpting
+          landscapes and adding trees and environmental details to make the
+          world more immersive. Additionally, I implemented a teleportation
+          system to enable smooth 3D transitions within the level, adding more
+          depth to gameplay. To refine the visuals further, I applied
+          post-processing effects such as bloom, color grading, and ambient
+          occlusion, giving the game a more polished and cinematic look. For the
+          art style, I used cartoon-themed assets for both the player and
+          enemies, giving the world a fun, stylized personality. Developing Bug
+          Shooter helped me gain a deeper understanding of 3D game development,
+          optimization, and Unity’s powerful tools — making it a key milestone
+          in my learning journey.
+        </p>
+        <div class="timeline-bar">
+          <div class="timeline-bar-track">
+            <div class="timeline-bar-fill"></div>
+            <div class="timeline-bar-dot left">
+              <span class="timeline-bar-label">Mar 2023</span>
+            </div>
+            <div class="timeline-bar-dot right">
+              <span class="timeline-bar-label">Apr 2023</span>
+            </div>
+          </div>
+          <div class="timeline-bar-text">Project Duration — 5 Weeks</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROJECT 3 ── -->
+    <div class="project-item">
+      <div class="project-video-wrap">
+        <video autoplay loop muted>
+          <source src="gameViedClips/ZombieShotter.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="project-info">
+        <div class="project-num">03</div>
+        <h3 class="project-name">Zombie Shooter</h3>
+        <div class="project-meta">
+          <span class="meta-chip chip-genre">🎮 Action</span>
+          <span class="meta-chip chip-engine">⚙ Unity</span>
+        </div>
+        <p class="project-desc">
+         Developed “Zombie Shooter,” a 3D Unity game focused on advanced animation and 
+         gameplay systems. Implemented AI behavior, particle effects, audio, and timeline-based 
+         cutscenes to enhance immersion. Built a layered animation system using state machines and 
+         Animation Rigging (IK, Multi-Aim) for realistic character movement and weapon handling. 
+         Designed smooth blending between locomotion and combat, ensuring responsive gameplay and 
+         polished visuals. Integrated runtime IK systems to align hands and weapons dynamically, 
+         improving realism during combat interactions. Developed modular and scalable animation 
+         controllers, allowing easy expansion of new states and behaviors. Optimized performance 
+         by managing rig constraints and blending weights, ensuring smooth gameplay across different 
+         scenarios.
+        </p>
+        <div class="timeline-bar">
+          <div class="timeline-bar-track">
+            <div class="timeline-bar-fill"></div>
+            <div class="timeline-bar-dot left">
+              <span class="timeline-bar-label">Apr 2023</span>
+            </div>
+            <div class="timeline-bar-dot right">
+              <span class="timeline-bar-label">Jun 2023</span>
+            </div>
+          </div>
+          <div class="timeline-bar-text">Project Duration — 12 Weeks</div>
+        </div>
+      </div>
+    </div>
+
+        <!-- ── PROJECT 4 ── -->
+    <div class="project-item">
+      <div class="project-video-wrap">
+        <video autoplay loop muted>
+          <source src="gameViedClips/VR.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="project-info">
+        <div class="project-num">04</div>
+        <h3 class="project-name">VR Interactive Room Experience</h3>
+        <div class="project-meta">
+          <span class="meta-chip chip-genre">🎮 VR World</span>
+          <span class="meta-chip chip-engine">⚙ Unity VR</span>
+        </div>
+        <p class="project-desc">
+        Developed a VR Interactive House experience using Unity with the
+          OpenXR SDK to create immersive room-based interactions. Configured XR
+          Management with Android and Windows platform support to ensure
+          cross-platform VR compatibility. Implemented interactive features
+          using XR Interaction Toolkit and custom C# scripts. Focused on clean
+          and optimized code by applying concepts like interfaces and class
+          inheritance. This project is my first self-developed OpenXR project,
+          built independently to explore VR interaction and system setup.
+        </p>
+        <div class="timeline-bar">
+          <div class="timeline-bar-track">
+            <div class="timeline-bar-fill"></div>
+            <div class="timeline-bar-dot left">
+              <span class="timeline-bar-label">jun 2024</span>
+            </div>
+            <div class="timeline-bar-dot right">
+              <span class="timeline-bar-label">Jun 2024</span>
+            </div>
+          </div>
+          <div class="timeline-bar-text">Project Duration — 4 Weeks</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <!-- <div class="footer-top"> -->
+    <!-- <div class="logo">PORTFOLIO</div>
+    <p class="footer-tagline">Crafted with code, driven by creativity.</p>
+  </div> -->
+
+  <div class="footer-contact">
+    <!-- <p class="footer-contact-title">// Get In Touch</p> -->
+    <div class="footer-links">
+      <a href="mailto:mahesan.shan@gmail.com" class="footer-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M2 7l10 7 10-7"/>
+        </svg>
+        mahesan.shan@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/mahesan-s" target="_blank" class="footer-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Mahesan · All rights reserved</p>
+    <p>Crafted with code, driven by creativity.</p>
+  </div>
+</footer>
+
+</body>
 </html>
